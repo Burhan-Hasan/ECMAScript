@@ -31,7 +31,7 @@ let dictionary = {
     'Bye': 'Пока'
 }
 
-console.log(dictionary['Hello']); // Привет
+//console.log(dictionary['Hello']); // Привет
 
 dictionary=new Proxy(dictionary,{
     get(target,phrase){
