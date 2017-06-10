@@ -8,4 +8,6 @@ var promise = new Promise((resolve, reject) => {
 
 promise.then((res)=>{
     alert(res);
+}).catch((err)=>{
+    console.log(err);
 });
