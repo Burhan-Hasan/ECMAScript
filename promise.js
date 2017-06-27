@@ -7,7 +7,7 @@ var promise = new Promise((resolve, reject) => {
 });
 
 promise.then((res)=>{
-    alert(res);
+    console.log(res);
 }).catch((err)=>{
-    console.log(err);
+    console.error(err);
 });
