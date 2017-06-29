@@ -26,3 +26,22 @@ for (let i = 1; i < 11; i++) {
 for (let j = 0; j < armyLet.length; j++) {
     armyLet[j]();
 }
+
+//Closure
+var armyVar2 = [];
+
+for (var i = 1; i < 11; i++) {
+    var func = (arg) => {
+        return () => {
+            console.log(arg);
+        }
+    };
+    armyVar2.push(func(i));
+}
+console.log('Closure')
+
+for (var j2 = 0; j2 < armyVar2.length; j2++) {
+    armyVar2[j2]();
+}
+
+//*************/
