@@ -10,7 +10,22 @@ function getProp() {
 var user = {
     isAdmin,
     userName,
-    [getProp()]: 'USA'
+    [getProp()]: 'USA',
+
 }
 
-console.log(user);
+var appUser = {
+    name: 'Max',
+    surname: 'Payne',
+    get fullName() {
+        return this.name + ' ' + this.surname;
+    }
+}
+
+var userAdmin = {
+    admin: true
+}
+
+Object.assign(appUser, userAdmin);
+console.log(appUser);
+
