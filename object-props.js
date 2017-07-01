@@ -11,7 +11,6 @@ var user = {
     isAdmin,
     userName,
     [getProp()]: 'USA',
-
 }
 
 var appUser = {
