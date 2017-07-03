@@ -28,3 +28,7 @@ var userAdmin = {
 Object.assign(appUser, userAdmin);
 console.log(appUser);
 
+//Simple Cloning
+var user2 = {};
+Object.assign(user2, user);
+
